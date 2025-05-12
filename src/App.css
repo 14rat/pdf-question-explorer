@@ -1,3 +1,4 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -12,10 +13,10 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 2em #8b5cf6aa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #8b5cf6aa);
 }
 
 @keyframes logo-spin {
@@ -35,8 +36,44 @@
 
 .card {
   padding: 2em;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .read-the-docs {
-  color: #888;
+  color: #6b7280;
+}
+
+/* Adicionando estilos para os componentes da aplicação */
+button.primary {
+  background-color: #8b5cf6;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button.primary:hover {
+  background-color: #7c3aed;
+}
+
+/* Estilizando inputs e formulários */
+input, textarea, select {
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.2);
+}
+
+/* Efeitos de transição para cards e elementos interativos */
+.transition-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
